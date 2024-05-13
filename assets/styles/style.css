@@ -1,1 +1,140 @@
+body{
+    margin:0;
+    font-family: sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+}
+.header-inner > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
+    font-size:1.5em;
+    list-style-type: none;
+}
+.header-inner > ul > li >a{
+    color:#000;
+    text-decoration: none;
+}
+.header-logo{
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/planarii-v-akvariume-kaznit-nelzya-pomilovat.webp");
+    background-size: cover;
+    
+}
+main{
+    margin-top:80px;
+}
+.about-us{
+    width: 100%;
+    height: 950px;
+
+    color:#fff;
+    text-shadow: 1px 1px 1px #000;
+
+    background-image:linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(203,203,203,0.3393732492997199) 31%, rgba(52,52,52,0.6951155462184874) 52%, rgba(28,28,28,0.8715861344537815) 75%, rgba(0,0,0,1) 100%), url("../images/4f9b729a54950e219d91915ddd5e6ccf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: about-us-an 1000ms ease-in-out;
+}
+@keyframes about-us-an{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.about-us-wrapper{
+    height: 100%;
+    padding: 20%;
+}
+.title{
+    text-align: center;
+    font-size:1.6em;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.subtitle{
+    color:rgba(255, 255, 255, 0.5);
+    margin-top:10px;
+    font-size:1.3em;
+}
+.catalog{
+    width: 100%;
+    height: 800px;
+    background-color: #000000;
+}
+.catalog-wrapper >.title{
+    color:#fff;
+}
+.catalog-subtitle{
+    font-size:0.8em;
+    color: rgba(0, 0, 0, 0.5);;
+}
+.catalog-wrapper{
+    height: 100%;
+}
+.catalog-inner{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+.catalog-item{
+    height: 300px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.5em;
+
+}
+.catalog-item-example{
+    display:"flex"
+}
+.catalog-item-example > img{
+    width: 150px;
+}
+.articles-inner {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 40% 40%;
+}
+
+#articles-item3{
+    grid-column: 1 / span 2;;
+}
+.service{
+    width: 100%;
+    height: 500px;
+    margin-top:50px;
+    background-color: #000000;
+    color:#fff;
+}
+.service-inner{
+    display: flex;
+    justify-content: space-evenly;
+}
+.service-item > img{
+    width: 50px;
+}
+.contacts-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+.contacts-inf{
+    margin-right: 150px;
+}
+footer{
+    padding: 25px;
+    border-top:solid #000 1px;
+}
